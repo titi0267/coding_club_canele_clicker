@@ -34,11 +34,25 @@ function clicker(){
         document.getElementById("nbrcanele").innerHTML = nombreCanele -=100;
     if(nombreCanele <= 99)
         document.getElementById("clicker").disabled = true;
-    
 }
 
+
+var nombreCanele = 1;
+var nbrcanele = document.getElementById("nbrcanele");
+function addsec()
+{
+    
+  nbrcanele.innerHTML = nombreCanele;
+  nombreCanele++;
+
+if(nombreClicker+=1)
+setInterval(addsec,1000)
+
+}
+/*
 window.onload = clicker()
 setTimeout(clicker(){
     document.getElementById("nbrcanele").click();
     3000;
 }
+*/
