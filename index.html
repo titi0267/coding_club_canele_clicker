@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <title>Canelé clicker</title>
+  <title>Canelés clicker</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>Canelé clicker</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Caneles_stemilion.jpg/1200px-Caneles_stemilion.jpg">
-<p>Vous avez 0 canelés</p>
-<button type="button">Cuisiner</button> <button>Acheter un four(25 canelés)</button>
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+<body class="body">
+  <h1 class="title">Canelé clicker</h1>
+  <img src="img.jpg" class="image" onclick="cuisiner()">
+  <div class="divcanele" >
+    <p>Vous avez <span id="nbrcanele">0</span> canelés</p>
+  <button type="button" class="buttonsize" onclick="cuisiner()">Cuisiner</button>
+</div>
+<div class="divclick"> 
+    <p>Vous avez <span id="nbrclick">0</span> clickers automatiques</p>
+  <button type="button" id="clicker" class="buttonsize" onclick="clicker()" disabled>Acheter un clicker (100 canelés)</button>
+</div>
+  <div class="divfour">
+    <p>Vous avez <span id="nbrfour">0</span> fours</p>
+  <button type="button" class="buttonsize" id="fourbut" onclick="four()" disabled>Acheter un four <br>(25 canelés)</button>
+</div>
+  <script src="script.js" ></script>
+  </body>
 </html>
