@@ -25,6 +25,8 @@
     width : 141px;
    height: 35px;
    font-size: 75%;
+   display: block;
+   margin: auto;
 }
 .divclick{
     float : left;
